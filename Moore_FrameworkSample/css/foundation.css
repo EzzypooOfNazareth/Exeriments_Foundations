@@ -12,6 +12,7 @@
     margin: 0 auto; } }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -342,10 +343,61 @@ h6, .h6 {
   color: #ffffff;
   text-align: center;
   padding: 7px 0 0;
+  margin-bottom: 30px;
 }
 .learnMore_button:hover{
   background-color: #EAEDF2;
   color: #CB2644;
+}
+
+.about_button {
+  width: 100%;
+  height: 45px;
+  background-color: #CB2644;
+  border-radius: 45px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 0 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.about_button:hover{
+  background-color: #EAEDF2;
+  color: #CB2644;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_bar {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.footer_bar i {
+  padding: 0 20px 0;
+}
+
+.copyrite {
+  color: #ffffff;
+}
+
+.about_image {
+  width: 100%;
+  height: 300px;
+  background-image: url('teamWork.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 35px;
 }
 
 
@@ -374,7 +426,7 @@ h4, .h4 {
   font-size: 1.15rem;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 1rem; }
 
 h5, .h5 {
   font-size: 1.0625rem;
