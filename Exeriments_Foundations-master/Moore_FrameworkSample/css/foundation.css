@@ -375,8 +375,6 @@ footer {
   background-color: #000000;
   justify-content: center;
   text-align: center;
-  bottom: 0;
-  /** position: absolute; **/
 }
 
 .footer_bar {
@@ -431,7 +429,6 @@ h4, .h4 {
   margin-bottom: 1rem; }
 
 h5, .h5 {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.0625rem;
   line-height: 1.4;
   margin-top: 0;
@@ -459,7 +456,7 @@ h6, .h6 {
 
 a {
   line-height: inherit;
-  color: inherit;
+  color: #2ba6cb;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
@@ -753,7 +750,6 @@ label > [type='radio'] {
   width: 100%; }
 
 label {
-  font-family: 'Roboto Condensed', sans-serif;
   display: block;
   margin: 0;
   font-size: 0.875rem;
