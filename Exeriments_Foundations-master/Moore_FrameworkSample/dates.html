@@ -15,7 +15,7 @@
   <body>
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
+        <div class="large-12 cell" onclick="location.href = 'index.html';">
           <h1>Tech <span class = "red_split">Con</span></h1>
         </div>
       </div>
@@ -23,41 +23,88 @@
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
           <div class="callout">
-            <h3>The Dates<br>of Tech<br><span class = "red_split">Con.</span></h3>
+            <h3>Dates<br>At Tech<br><span class = "red_split">Con.</span></h3>
+            <h4 class = "jquery_results1">May 9th - 21st</h4>
       </div>
 
-          <h4>Want to Plan a date to Tech <span class = "red_split">Con?</span>:</h4>
+          <h4>Want to be a part of Tech <span class = "red_split">Con?</span>:</h4>
           <form>
             <div class="grid-x grid-padding-x">
               <div class="large-12 cell">
                 <label>Full Name:</label>
-                <input type="text" placeholder="John Doe" />
+                <input id = "name" type="text" placeholder="John Doe" />
               </div>
             </div>
             <div class="grid-x grid-padding-x">
               <div class="large-4 medium-4 cell">
                 <label>Date:</label>
-                <input type="date"/>
+                <input id = "date" type="date"/>
               </div>
-              <div class="large-4 medium-4 cell">
-                <label>Requested Tim:</label>
-                <input type="time"/>
               </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Website/Portfolio:</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="www.TechCon.com" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
+
+            <div class="enter_button" id = "buttonGet">
+              <p class = "button_text">Register</p>
             </div>
+            </div>
+          </div>
 
             <div class="grid-x grid-padding-x">
               <div class="large-12 cell">
                 <div class="callout">
-                  <h4>Insert Dates here: </h4>
+                  <h4>Anyone you know?: </h4>
+                  <br/>
+
+                  <h4 class = "jquery_results">We'll put down:
+                  <br/>
+                  Ezra Moore
+                  <br/>
+                  For:
+                  <br/>
+                  2019-05-10
+                  </h4>
+                  <hr/>
+
+                  <h4 class = "jquery_results">We'll put down:
+                  <br/>
+                  William Nye
+                  <br/>
+                  For:
+                  <br/>
+                  2019-05-11
+                  </h4>
+                  <hr/>
+
+                  <h4 class = "jquery_results">We'll put down:
+                  <br/>
+                  Ellon Musk
+                  <br/>
+                  For:
+                  <br/>
+                  2019-05-11
+                  </h4>
+                  <hr/>
+
+                  <h4 class = "jquery_results">We'll put down:
+                  <br/>
+                  Bill Gates
+                  <br/>
+                  For:
+                  <br/>
+                  2019-05-12
+                  </h4>
+                  <hr/>
+
+                  <h4 class = "jquery_results">We'll put down:
+                  <br/>
+                  Tim McKenna
+                  <br/>
+                  For:
+                  <br/>
+                  2019-05-13
+                  </h4>
+                  <hr/>
+
+                  <h4 class = "jquery_results" id="result"></h4>
             </div>
       </div>
     </div>
@@ -66,6 +113,20 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script>
+         $(document).ready(function(){
+             $("#buttonGet").click(function () {
+
+                $("#result").append(
+                    "We'll put down:" + "<br/>" +
+                    $("#name").val() + "<br/>" +
+                    "For:" + "<br/>" +
+                    $("#date").val() + "<br/>" +
+                    "<hr/>"
+                );
+            });
+         });
+      </script>
   </body>
 
 
